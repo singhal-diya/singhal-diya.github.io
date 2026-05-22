@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)file:///C:/Users/diyas/Downloads/Diya%20Singhal%20%E2%80%94%20Business%20Analyst%20-%20latest-v2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diya Singhal — Business Analyst</title>
+<link href="./Diya Singhal — Business Analyst portfolio_files/css2" rel="stylesheet">
+<style>
+:root {
+  --ink: #0a0908;
+  --paper: #f7f3ee;
+  --rust: #c1440e;
+  --rust-light: #e8ddd6;
+  --muted: #6b6560;
+  --rule: #ddd6cc;
+  --dark: #111009;
+  --dark2: #1c1a16;
+  --cream: #ede7de;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:'Outfit',sans-serif;overflow-x:hidden;}
+section{scroll-margin-top:86px;}
+
+/* ── CURSOR ── */
+#cur{width:8px;height:8px;border-radius:50%;background:var(--rust);position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .12s;}
+#cur2{width:32px;height:32px;border-radius:50%;border:1px solid var(--rust);position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all .3s ease;opacity:.4;}
+a:hover ~ #cur,button:hover ~ #cur{transform:translate(-50%,-50%) scale(3);}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:1.05rem 3.5rem;display:flex;justify-content:space-between;align-items:center;background:rgba(247,243,238,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;box-shadow:0 12px 30px rgba(10,9,8,0);transition:border-color .25s ease,box-shadow .25s ease,background .25s ease;}
+nav.scrolled{border-bottom-color:rgba(221,214,204,.9);box-shadow:0 12px 30px rgba(10,9,8,.06);}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.65rem;font-weight:700;color:var(--ink);text-decoration:none;letter-spacing:-.7px;line-height:1;}
+.logo em{color:var(--rust);font-style:italic;}
+.nav-links{display:flex;gap:2.5rem;list-style:none;}
+.nav-links a{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;font-weight:500;}
+.nav-links a:hover{color:var(--rust);}
+
+/* ── HERO ── */
+#hero{
+  min-height:100vh;display:grid;grid-template-rows:1fr auto;
+  background:var(--dark);overflow:hidden;position:relative;
+}
+.hero-noise{
+  position:absolute;inset:0;opacity:.03;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:200px;
+}
+.hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:80px 80px;}
+.hero-inner{display:flex;flex-direction:column;justify-content:center;padding:8rem 3.5rem 3rem;position:relative;z-index:2;}
+.hero-eyebrow{font-family:'Space Mono',monospace;font-size:.78rem;letter-spacing:3.8px;text-transform:uppercase;color:#f05a24;margin-bottom:2.25rem;display:flex;align-items:center;gap:16px;font-weight:700;}
+.hero-eyebrow::before{content:'';width:50px;height:2px;background:#f05a24;}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(4.5rem,12vw,10rem);font-weight:300;line-height:.9;color:white;letter-spacing:-3px;margin-bottom:2rem;}
+.hero-name strong{font-weight:700;}
+.hero-name em{color:var(--rust);font-style:italic;}
+.hero-heading-line{font-family:'Cormorant Garamond',serif;font-size:clamp(1.65rem,3vw,2.8rem);font-weight:300;line-height:1.05;color:#c5bfb8;letter-spacing:-.5px;margin:-.7rem 0 2rem;}
+.hero-heading-line em{color:var(--rust);font-style:italic;}
+.hero-sub{display:flex;align-items:flex-start;gap:4rem;}
+.hero-desc{font-size:1rem;color:#8a857e;max-width:480px;line-height:1.75;font-weight:300;}
+.hero-desc strong{color:#c5bfb8;font-weight:400;}
+.hero-ctas{display:flex;flex-direction:column;gap:.75rem;min-width:180px;}
+.btn-rust{background:var(--rust);color:white;padding:.9rem 2rem;font-size:.7rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:600;display:inline-block;transition:all .25s;border:none;}
+.btn-rust:hover{background:#a33a0c;transform:translateX(4px);}
+.btn-ghost{border:1px solid #3a3530;color:#8a857e;padding:.9rem 2rem;font-size:.7rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;font-weight:500;display:inline-block;transition:all .25s;}
+.btn-ghost:hover{border-color:var(--rust);color:white;transform:translateX(4px);}
+.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;padding:2.5rem 3.5rem;border-top:1px solid #1e1c18;position:relative;z-index:2;}
+.hero-stats{display:flex;gap:3.5rem;}
+.hstat{display:flex;flex-direction:column;gap:2px;}
+.hstat-n{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:700;color:white;line-height:1;text-shadow:0 1px 0 rgba(193,68,14,.65);}
+.hstat-l{font-family:'Space Mono',monospace;font-size:.68rem;letter-spacing:1.6px;text-transform:uppercase;color:#8a857e;font-weight:700;}
+.hero-scroll-hint{font-family:'Space Mono',monospace;font-size:.62rem;letter-spacing:2px;color:#3a3530;text-transform:uppercase;display:flex;align-items:center;gap:10px;}
+.hero-scroll-hint::after{content:'';width:1px;height:40px;background:#3a3530;}
+
+/* ── MARQUEE ── */
+.marquee-wrap{background:var(--rust);padding:.8rem 0;overflow:hidden;white-space:nowrap;}
+.marquee-inner{display:inline-flex;animation:marquee 20s linear infinite;}
+.marquee-inner span{font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:white;padding:0 2rem;}
+.marquee-inner span.dot{color:rgba(255,255,255,.4);}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── ABOUT ── */
+#about{padding:7rem 3.5rem;background:var(--paper);display:grid;grid-template-columns:1fr 1.4fr;gap:6rem;align-items:start;}
+.about-left{}
+.section-num{font-family:'Space Mono',monospace;font-size:.6rem;color:var(--rust);letter-spacing:2px;margin-bottom:.8rem;}
+.section-heading{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.5rem);font-weight:300;line-height:1.05;letter-spacing:-1px;margin-bottom:2rem;}
+.section-heading em{color:var(--rust);font-style:italic;}
+.about-photo-placeholder{
+  width:100%;aspect-ratio:3/4;background:var(--dark2);
+  display:flex;align-items:flex-end;padding:2rem;position:relative;overflow:hidden;
+}
+.about-photo-placeholder::before{content:'DS';font-family:'Cormorant Garamond',serif;font-size:8rem;font-weight:700;color:#1e1c18;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1;}
+.about-photo-placeholder.has-photo{padding:0;background:var(--cream);}
+.about-photo-placeholder.has-photo::before{display:none;}
+.about-photo-placeholder img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
+.about-photo-label{font-family:'Space Mono',monospace;font-size:.6rem;color:#4a453f;letter-spacing:1px;text-transform:uppercase;position:relative;z-index:1;}
+.about-right{}
+.about-body{font-size:1rem;line-height:1.8;color:var(--muted);font-weight:300;margin-bottom:2.5rem;}
+.about-body strong{color:var(--ink);font-weight:500;}
+.about-body p+p{margin-top:1rem;}
+.skills-list{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:2.5rem;}
+.skill-pill{background:var(--cream);padding:.55rem 1rem;font-size:.78rem;color:var(--ink);font-weight:400;border-left:2px solid transparent;transition:border-color .2s;}
+.skill-pill:hover{border-left-color:var(--rust);}
+.certs-row{display:flex;gap:1rem;flex-wrap:wrap;}
+.cert{background:var(--dark);padding:1.05rem 1.35rem;display:flex;flex-direction:column;gap:6px;min-width:212px;border-left:3px solid var(--rust);}
+.cert-name{font-size:1rem;font-weight:700;color:white;line-height:1.25;}
+.cert-sub{font-family:'Space Mono',monospace;font-size:.68rem;color:#8a857e;text-transform:uppercase;letter-spacing:1.4px;font-weight:700;}
+
+/* ── PROJECTS ── */
+#projects{padding:0;background:var(--paper);}
+.projects-header{padding:4rem 3.5rem 3rem;display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--rule);}
+.proj-count{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:300;color:var(--rule);line-height:1;}
+
+/* Project cards - alternating layout */
+.proj-card{display:grid;border-top:1px solid var(--rule);transition:background .3s;}
+.proj-card:hover{background:var(--cream);}
+.proj-card.layout-a{grid-template-columns:80px 1fr 1.2fr;}
+.proj-card.layout-b{grid-template-columns:80px 1.2fr 1fr;}
+.proj-index-col{background:var(--ink);display:flex;align-items:center;justify-content:center;padding:2.5rem 0;writing-mode:vertical-rl;transform:rotate(180deg);}
+.proj-index{font-family:'Space Mono',monospace;font-size:.6rem;color:var(--rust);letter-spacing:2px;}
+.proj-info{padding:2.5rem 3rem;display:flex;flex-direction:column;justify-content:space-between;gap:1.5rem;}
+.proj-tools-row{display:flex;gap:.5rem;flex-wrap:wrap;}
+.proj-tool{font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:1px;text-transform:uppercase;background:var(--ink);color:white;padding:3px 9px;}
+.proj-title{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;line-height:1.1;letter-spacing:-.5px;}
+.proj-sub{font-size:.8rem;color:var(--muted);font-style:italic;}
+.proj-cta{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:.62rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--rust);text-decoration:none;transition:gap .2s;border:1px solid var(--rust);padding:.65rem 1.2rem;}
+.proj-cta:hover{gap:16px;background:var(--rust);color:white;}
+.proj-details{padding:2.5rem 3rem;border-left:1px solid var(--rule);}
+.proj-desc{font-size:.9rem;color:var(--muted);line-height:1.7;margin-bottom:1.5rem;font-weight:300;}
+.proj-findings{list-style:none;display:flex;flex-direction:column;gap:.6rem;}
+.proj-findings li{font-size:.85rem;color:var(--ink);padding-left:1.2rem;position:relative;line-height:1.5;}
+.proj-findings li::before{content:'—';position:absolute;left:0;color:var(--rust);font-size:.8rem;}
+
+/* ── PROJECT DETAIL PAGES (hidden by default) ── */
+.proj-page{display:none;position:fixed;inset:0;z-index:500;background:var(--paper);overflow-y:auto;}
+.proj-page.open{display:block;}
+.proj-page-inner{max-width:900px;margin:0 auto;padding:6rem 3rem;}
+.proj-page-back{font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--rust);text-decoration:none;display:inline-flex;align-items:center;gap:8px;margin-bottom:3rem;border:none;background:none;font-size:.65rem;cursor:pointer;}
+.proj-page-back:hover{gap:14px;}
+.proj-page-eyebrow{font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:2px;color:var(--rust);text-transform:uppercase;margin-bottom:1rem;}
+.proj-page-title{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:600;line-height:1;letter-spacing:-1.5px;margin-bottom:1rem;}
+.proj-page-sub{font-size:1rem;color:var(--muted);margin-bottom:3rem;font-weight:300;}
+.proj-page-img{width:100%;aspect-ratio:16/7;background:var(--dark2);margin-bottom:3rem;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+.proj-page-img.has-image{background:white;aspect-ratio:16/8;margin-bottom:2rem;}
+.proj-page-img img{width:100%;height:100%;object-fit:contain;display:block;}
+.proj-page-img-label{font-family:'Space Mono',monospace;font-size:.65rem;color:#3a3530;text-transform:uppercase;letter-spacing:2px;}
+.proj-img-note{position:absolute;bottom:1rem;right:1rem;font-family:'Space Mono',monospace;font-size:.55rem;color:#3a3530;background:rgba(0,0,0,.5);padding:4px 8px;}
+.proj-section-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;margin-bottom:1rem;margin-top:2.5rem;border-bottom:1px solid var(--rule);padding-bottom:.5rem;}
+.proj-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);margin-bottom:2rem;}
+.proj-kpi{background:var(--paper);padding:1.2rem;text-align:center;}
+.proj-kpi-val{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:var(--ink);display:block;}
+.proj-kpi-label{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;}
+.proj-body-text{font-size:.95rem;line-height:1.8;color:var(--muted);font-weight:300;margin-bottom:1rem;}
+.proj-body-text strong{color:var(--ink);font-weight:500;}
+.findings-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);margin-bottom:2rem;}
+.finding-item{background:var(--paper);padding:1.2rem 1.5rem;}
+.finding-num{font-family:'Space Mono',monospace;font-size:.55rem;color:var(--rust);letter-spacing:1px;margin-bottom:.5rem;}
+.finding-title{font-size:.9rem;font-weight:500;color:var(--ink);margin-bottom:.4rem;}
+.finding-body{font-size:.82rem;color:var(--muted);line-height:1.6;font-weight:300;}
+.add-img-note{background:var(--cream);border-left:3px solid var(--rust);padding:1rem 1.5rem;font-size:.82rem;color:var(--muted);margin-bottom:2rem;font-style:italic;}
+.project-report-frame{width:100%;min-height:760px;border:1px solid var(--rule);background:white;margin-top:.5rem;}
+.doc-embed-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:1rem;}
+.doc-embed-card{background:var(--cream);border:1px solid var(--rule);padding:1rem;}
+.doc-embed-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem;}
+.doc-embed-title{font-size:.9rem;font-weight:500;color:var(--ink);}
+.doc-open-link{font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--rust);text-decoration:none;border:1px solid var(--rust);padding:.55rem .9rem;white-space:nowrap;}
+.doc-open-link:hover{background:var(--rust);color:white;}
+.doc-object{width:100%;min-height:620px;border:1px solid var(--rule);background:white;display:block;}
+.doc-object-ppt{min-height:680px;aspect-ratio:16/10;}
+.doc-object-excel{min-height:760px;}
+.doc-fallback{font-size:.85rem;color:var(--muted);line-height:1.6;padding:2rem;}
+
+/* ── EXPERIENCE ── */
+#experience{padding:6rem 3.5rem;background:var(--dark);color:white;border-top:1px solid #1e1c18;}
+#experience .section-heading{color:white;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:0;margin-top:3rem;}
+.exp-row{display:grid;grid-template-columns:200px 1fr;gap:3rem;padding:2rem 0;border-bottom:1px solid #1e1c18;}
+.exp-row:last-child{border-bottom:none;}
+.exp-period{font-family:'Space Mono',monospace;font-size:.78rem;color:#8a857e;line-height:1.7;padding-top:3px;font-weight:700;}
+.exp-period span{color:#6f6860!important;font-size:.68rem!important;}
+.exp-body{}
+.exp-role{font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:700;color:white;margin-bottom:4px;line-height:1.1;}
+.exp-org{font-size:.95rem;color:#ff6a2f;margin-bottom:1rem;font-style:italic;font-weight:500;}
+.exp-bullets{list-style:none;}
+.exp-bullets li{font-size:.98rem;color:#9b948c;padding-left:1.2rem;position:relative;margin-bottom:.65rem;line-height:1.65;font-weight:300;}
+.exp-bullets li::before{content:'→';position:absolute;left:0;color:#8a857e;}
+
+/* ── CONTACT ── */
+#contact{padding:6rem 3.5rem;background:var(--paper);display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;border-top:1px solid var(--rule);}
+.contact-left .section-heading{margin-bottom:1.5rem;}
+.contact-tagline{font-size:1.05rem;color:var(--muted);line-height:1.75;font-weight:300;margin-bottom:2.5rem;}
+.contact-links{display:flex;flex-direction:column;gap:.5rem;}
+.clink{display:grid;grid-template-columns:100px 1fr;gap:1rem;padding:1rem;background:var(--cream);align-items:center;text-decoration:none;border-left:2px solid transparent;transition:all .2s;}
+.clink:hover{border-left-color:var(--rust);background:#e4dcd4;}
+.clink-label{font-family:'Space Mono',monospace;font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;}
+.clink-val{font-size:.88rem;color:var(--ink);font-weight:400;}
+.contact-right{}
+.open-box{background:var(--dark);padding:2.5rem;height:100%;}
+.open-box h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:white;margin-bottom:1rem;}
+.open-box p{font-size:.88rem;color:#6b6560;line-height:1.7;margin-bottom:1.5rem;font-weight:300;}
+.open-box p strong{color:#c5bfb8;font-weight:400;}
+.open-tags{display:flex;gap:.5rem;flex-wrap:wrap;}
+.open-tag{background:#1e1c18;padding:.4rem .9rem;font-size:.7rem;color:#8a857e;}
+
+/* ── FOOTER ── */
+footer{background:var(--dark);padding:1.2rem 3.5rem;border-top:1px solid #1e1c18;display:flex;justify-content:space-between;align-items:center;}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:.9rem;color:#3a3530;}
+.footer-copy{font-family:'Space Mono',monospace;font-size:.55rem;color:#2a2520;letter-spacing:1px;text-transform:uppercase;}
+
+/* ── REVEAL ANIMATION ── */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:.1s;}
+.reveal-delay-2{transition-delay:.2s;}
+.reveal-delay-3{transition-delay:.3s;}
+
+@media(max-width:768px){
+  section{scroll-margin-top:78px;}
+  nav{padding:.9rem 1.25rem;gap:.8rem;}
+  .logo{font-size:1.45rem;}
+  .logo{flex:0 0 auto;}
+  .nav-links{gap:.65rem;row-gap:.25rem;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100% - 125px);}
+  .nav-links a{font-size:.56rem;letter-spacing:1px;}
+  #hero .hero-inner{padding:6.75rem 1.5rem 2rem;}
+  .hero-eyebrow{font-size:.66rem;letter-spacing:2.4px;gap:12px;}
+  .hero-eyebrow::before{width:32px;}
+  .hero-name{font-size:clamp(4rem,18vw,6.5rem);letter-spacing:-2px;}
+  .hero-heading-line{font-size:1.55rem;margin:-.5rem 0 1.5rem;}
+  #hero .hero-bottom{padding:1.5rem;flex-direction:column;gap:1.5rem;align-items:flex-start;}
+  .hero-stats{gap:1.4rem;flex-wrap:wrap;}
+  .hstat-n{font-size:2.35rem;}
+  .hstat-l{font-size:.62rem;}
+  #about{grid-template-columns:1fr;padding:4rem 1.5rem;gap:3rem;}
+  .about-photo-placeholder{display:none;}
+  .about-photo-placeholder.has-photo{display:block;max-width:360px;}
+  .proj-card.layout-a,.proj-card.layout-b{grid-template-columns:60px 1fr;}
+  .proj-details{display:none;}
+  #experience,#contact{padding:4rem 1.5rem;}
+  #contact{grid-template-columns:1fr;}
+  .proj-page-inner{padding:4rem 1.5rem;}
+  .project-report-frame{min-height:620px;}
+  .doc-embed-head{align-items:flex-start;flex-direction:column;}
+  .doc-object{min-height:520px;}
+  .doc-object-ppt,.doc-object-excel{min-height:560px;}
+}
+</style>
+</head>
+<body style="">
+
+<div id="cur" style="left: 1025px; top: 438px;"></div>
+<div id="cur2" style="left: 1025px; top: 438px;"></div>
+
+<!-- NAV -->
+<nav class="scrolled">
+  <a href="#" class="logo">Diya <em>Singhal</em></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-noise"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Business Analyst · Finance Domain · India</div>
+    <h1 class="hero-name">
+      <strong>Diya</strong><br>
+      <em>Singhal.</em>
+    </h1>
+    <div class="hero-heading-line">Turning data into <em>solutions.</em></div>
+    <div class="hero-sub">
+      <p class="hero-desc">
+        <strong>CFA-trained analyst</strong> turning messy data into clear decisions.
+        SQL · Power BI · Excel · Financial Modelling.
+        3+ years building frameworks, presenting insights to stakeholders, and asking
+        <em style="color:#c5bfb8">the right business questions.</em>
+      </p>
+      <div class="hero-ctas">
+        <a href=\"#projects\" class=\"btn-rust\">View Projects →</a>"}
+        <a href=\"#contact\" class=\"btn-ghost\">Hire Me</a>"}
+      </div>
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <div class="hero-stats">
+      <div class="hstat"><span class="hstat-n">4</span><span class="hstat-l">BA Projects</span></div>
+      <div class="hstat"><span class="hstat-n">3+</span><span class="hstat-l">Yrs Experience</span></div>
+      <div class="hstat"><span class="hstat-n">4K+</span><span class="hstat-l">Students Trained</span></div>
+      <div class="hstat"><span class="hstat-n">100K+</span><span class="hstat-l">Orders Analysed (SQL)</span></div>
+    </div>
+    <div class="hero-scroll-hint">Scroll down</div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-inner">
+    <span>SQL · PostgreSQL</span><span class="dot">✦</span>
+    <span>Power BI</span><span class="dot">✦</span>
+    <span>Excel · Dashboarding</span><span class="dot">✦</span>
+    <span>CFA Level I</span><span class="dot">✦</span>
+    <span>Financial Modelling</span><span class="dot">✦</span>
+    <span>Requirements Analysis</span><span class="dot">✦</span>
+    <span>Stakeholder Communication</span><span class="dot">✦</span>
+    <span>Business Research</span><span class="dot">✦</span>
+    <span>SQL · PostgreSQL</span><span class="dot">✦</span>
+    <span>Power BI</span><span class="dot">✦</span>
+    <span>Excel · Dashboarding</span><span class="dot">✦</span>
+    <span>CFA Level I</span><span class="dot">✦</span>
+    <span>Financial Modelling</span><span class="dot">✦</span>
+    <span>Requirements Analysis</span><span class="dot">✦</span>
+    <span>Stakeholder Communication</span><span class="dot">✦</span>
+    <span>Business Research</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-left reveal visible">
+    <div class="section-num">// 01</div>
+    <h2 class="section-heading">Finance<br>depth.<br><em>Analyst</em><br>mindset.</h2>
+    <div class="about-photo-placeholder has-photo">
+      <img src="professional-image-diya.png" alt="Diya Singhal">
+    </div>
+  </div>
+  <div class="about-right reveal reveal-delay-1 visible">
+    <div class="about-body">
+
+      <p>I'm a <strong>Business Analyst</strong> with a <strong>finance-first mindset</strong>. I work at the intersection of business, data, and decision-making.</p>
+      <p>For me, analytics is not about building dashboards for the sake of visuals — it’s about finding the reason behind business performance. If customer retention drops, I investigate <strong>behavioral patterns</strong>. If revenue dips despite stable order volume, I look for <strong>operational leakage</strong>. If cancellations spike, I quantify the <strong>business impact</strong> and identify <strong>process gaps</strong>.</p>
+      <p>My toolkit includes <strong>SQL, PostgreSQL, Power BI, DAX, Excel, and Financial Modelling</strong> — but the real value I bring is translating data into strategic decisions stakeholders can act on.</p>
+      <p>I’ve also taught <strong>4,000+ graduates</strong> in foundational finance &amp; analytical thinking, trained <strong>100+ CFA L1 aspirants</strong> and <strong>conducted finance and marketing workshops</strong> for graduates as lead speaker giving me <strong>strong communication skills alongside technical capability.</strong></p>
+      <p>I focus on delivering insights that are <strong>clear, actionable, and grounded in business context</strong>. </p>
+    </div>
+    <div class="skills-list">
+      <div class="skill-pill">SQL · PostgreSQL</div>
+      <div class="skill-pill">Power BI · DAX</div>
+      <div class="skill-pill">Excel · Pivot Tables</div>
+      <div class="skill-pill">Requirements Analysis</div>
+      <div class="skill-pill">Financial Modelling</div>
+      <div class="skill-pill">Stakeholder Management</div>
+      <div class="skill-pill">DCF · Equity Research</div>
+      <div class="skill-pill">Process Mapping</div>
+    </div>
+    <div class="certs-row">
+      <div class="cert"><span class="cert-name">CFA Level I — Cleared</span><span class="cert-sub">CFA Institute</span></div>
+      <div class="cert"><span class="cert-name">MBA in Finance </span><span class="cert-sub">Manipal University · 2026</span></div>
+      <div class="cert"><span class="cert-name">Data Analytics</span><span class="cert-sub">Certified</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header reveal visible">
+    <div>
+      <div class="section-num">// 02</div>
+      <h2 class="section-heading" style="font-size:clamp(2rem,3.5vw,3rem);margin-bottom:0">Featured<br><em>Projects</em></h2>
+    </div>
+    <div class="proj-count">04</div>
+  </div>
+
+  <!-- PROJECT 1 -->
+  <div class="proj-card layout-a reveal visible">
+    <div class="proj-index-col"><span class="proj-index">01 / 04</span></div>
+    <div class="proj-info">
+      <div>
+        <div class="proj-tools-row" style="margin-bottom:1rem">
+          <span class="proj-tool">Excel</span>
+          <span class="proj-tool">Business Case</span>
+          <span class="proj-tool">Insights Presentation</span>
+        </div>
+        <div class="proj-title">Drone Delivery<br>Feasibility — Taclo</div>
+        <div class="proj-sub" style="margin-top:.5rem">Financial model + BA requirements document + phased roadmap</div>
+      </div>
+      <a href="#" class="proj-cta" onclick="openProject(&#39;taclo&#39;);return false;">View Project →</a>
+    </div>
+    <div class="proj-details">
+      <p class="proj-desc">End-to-end feasibility study for replacing delivery partners with drones at a food-tech startup. Defined success metrics, built a cost model, and proposed a phased implementation roadmap with BA requirements documentation.</p>
+      <ul class="proj-findings">
+        <li>27,024/month per drone vs ₹28,438 for delivery partner breakeven at 404 deliveries/month at ₹66.91 each</li>
+        <li>Drone-eligibility criteria defined: ≤5km, ≤5kg, peak hours, weather clear</li>
+        <li>BA requirements document: stakeholder map, functional requirements, assumptions, out-of-scope</li>
+        <li>Phased rollout covering tier 1 cities first with hub placement and risk matrix</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECT 2 -->
+  <div class="proj-card layout-b reveal visible">
+    <div class="proj-index-col"><span class="proj-index">02 / 04</span></div>
+    <div class="proj-details" style="border-left:none;border-right:1px solid var(--rule)">
+      <p class="proj-desc">Full-stack analytics on 99,441 real Brazilian e-commerce orders. 33 SQL queries, 6 reusable views, 1 Power BI dashboard, and a 10-slide insight deck with actual query outputs.</p>
+      <ul class="proj-findings">
+        <li>SP + RJ + MG = 63.1% of all revenue — geographic concentration risk</li>
+        <li>Zero repeat customers — critical retention gap identified</li>
+        <li>73.9% credit card penetration; Boleto 19% = non-digital user segment</li>
+        <li>Used CTEs, LAG(), ROW_NUMBER(), CASE WHEN, timestamp arithmetic</li>
+      </ul>
+    </div>
+    <div class="proj-info">
+      <div>
+        <div class="proj-tools-row" style="margin-bottom:1rem">
+          <span class="proj-tool">SQL</span>
+          <span class="proj-tool">PostgreSQL</span>
+          <span class="proj-tool">Power BI</span>
+        </div>
+        <div class="proj-title">E-Commerce<br>Analytics — Olist</div>
+        <div class="proj-sub" style="margin-top:.5rem">100K orders · 6 tables · 33 queries · 1 dashboard</div>
+      </div>
+      <a href="#" class="proj-cta" onclick="openProject(&#39;olist&#39;);return false;">View Project →</a>
+    </div>
+  </div>
+
+  <!-- PROJECT 3 -->
+  <div class="proj-card layout-a reveal visible">
+    <div class="proj-index-col"><span class="proj-index">03 / 04</span></div>
+    <div class="proj-info">
+      <div>
+        <div class="proj-tools-row" style="margin-bottom:1rem">
+          <span class="proj-tool">Excel</span>
+          <span class="proj-tool">Pivot Tables</span>
+          <span class="proj-tool">Dashboard</span>
+        </div>
+        <div class="proj-title">Operations<br>Dashboard — Fresco</div>
+        <div class="proj-sub" style="margin-top:.5rem">22,505 orders · Area · Time slot · Revenue analysis</div>
+      </div>
+      <a href="#" class="proj-cta" onclick="openProject(&#39;fresco&#39;);return false;">View Project →</a>
+    </div>
+    <div class="proj-details">
+      <p class="proj-desc">Operations analysis for a Bengaluru quick-commerce platform. 22,823 raw orders analysed across time slots, delivery areas, acquisition channels, and monthly revenue trends.</p>
+      <ul class="proj-findings">
+        <li>HSR Layout = 69.6% of all orders (15,657 of 22,505) — extreme geographic concentration</li>
+        <li>₹80,04,849 revenue · 99.55% completion rate · 25-min avg delivery</li>
+        <li>September = peak at 4,231 orders — 45% above August</li>
+        <li>Late Night = only 7% of orders — significant idle capacity cost identified</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PROJECT 4 -->
+  <div class="proj-card layout-b reveal visible">
+    <div class="proj-index-col"><span class="proj-index">04 / 04</span></div>
+    <div class="proj-details" style="border-left:none;border-right:1px solid var(--rule)">
+      <p class="proj-desc">Multi-dimensional Power BI dashboard on e-commerce sales performance built directly from raw data. State-wise analysis, seasonal trends, delayed delivery by category, product rating analysis.</p>
+      <ul class="proj-findings">
+        <li>16M revenue · 99K orders · Avg 4.0 product rating</li>
+        <li>Auto category = 811 delayed orders — highest delay concentration</li>
+        <li>Q2 seasonal spike to ₹4.8M identified; Q4 sharp revenue decline</li>
+        <li>YoY growth 2016→2017→2018 visualised with trend analysis</li>
+      </ul>
+    </div>
+    <div class="proj-info">
+      <div>
+        <div class="proj-tools-row" style="margin-bottom:1rem">
+          <span class="proj-tool">Power BI</span>
+          <span class="proj-tool">DAX</span>
+          <span class="proj-tool">Data Modelling</span>
+        </div>
+        <div class="proj-title">Sales &amp; Performance<br>— Shop-Nest</div>
+        <div class="proj-sub" style="margin-top:.5rem">Multi-dim dashboard · Delayed orders · Seasonal trends</div>
+      </div>
+      <a href="#" class="proj-cta" onclick="openProject(&#39;shopnest&#39;);return false;">View Project →</a>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="reveal visible">
+  <div class="section-num" style="color:var(--rust)">// 03</div>
+  <h2 class="section-heading">Professional<br><em>Experience</em></h2>
+  <div class="exp-grid">
+    <div class="exp-row">
+      <div class="exp-period">
+        2023 — Present<br>
+        <span style="color:#2a2520;font-size:.55rem">
+          IMS Proschool / PIBM / Freelance
+        </span>
+      </div>
+
+      <div class="exp-body">
+    <div class="exp-role">
+      CFA Program Lead &amp; Business Analytics Trainer
+    </div>
+
+    <div class="exp-org">
+      IMS Proschool / PIBM / Freelance · Delhi–Pune
+    </div>
+
+    <ul class="exp-bullets">
+      <li>Managed CFA and analytics programs across 5+ cohorts covering operations, reporting, stakeholder coordination, and performance tracking.</li>
+      <li>Delivered 50+ workshops and trained 4,000+ students in finance, business analysis, and digital business strategy through case-based learning.</li>
+      <li>Delivered guest lectures and institutional workshops for graduates across commerce, science, and arts streams across India.</li>
+      <li>Delivered sessions in academic environments involving directors, deans, faculty members, and institutional leadership teams.</li>
+      <li>Built structured content and assessment frameworks adopted across multiple cohorts and institutional programs.</li>
+    </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-left reveal visible">
+    <div class="section-num">// 04</div>
+    <h2 class="section-heading">Let's work<br><em>together.</em></h2>
+    <p class="contact-tagline">Actively looking for Business Analyst roles — fintech, e-commerce, logistics, or SaaS. Available for full-time across India.</p>
+    <div class="contact-links">
+      <a href="mailto:diyasinghal24@gmail.com" class="clink">
+        <span class="clink-label">Email</span>
+        <span class="clink-val">diyasinghal24@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/diya-singhal-7474801a7" class="clink" target="_blank">
+        <span class="clink-label">LinkedIn</span>
+        <span class="clink-val">diya-singhal-7474801a7</span>
+      </a>
+      <a href="tel:+919599340366" class="clink">
+        <span class="clink-label">Phone</span>
+        <span class="clink-val">+91 95993 40366</span>
+      </a>
+    </div>
+  </div>
+  <div class="contact-right reveal reveal-delay-1 visible">
+    <div class="open-box">
+      <h3>Open to opportunities</h3>
+      <p>Looking for BA roles in <strong>fintech · e-commerce · logistics · SaaS</strong>. CFA background + SQL + Power BI + 4-project portfolio ready to share on request.</p>
+      <p>📍 Delhi, India &nbsp;·&nbsp; 🎓 MBA Finance (Jul 2026) &nbsp;·&nbsp; 📊 CFA L1 Cleared</p>
+      <div class="open-tags" style="margin-top:1.5rem">
+        <span class="open-tag">Google</span><span class="open-tag">Amazon</span>
+        <span class="open-tag">Razorpay</span><span class="open-tag">PhonePe</span>
+        <span class="open-tag">Meesho</span><span class="open-tag">Swiggy</span>
+        <span class="open-tag">Porter</span><span class="open-tag">Urban Company</span>
+        <span class="open-tag">Nykaa</span><span class="open-tag">Shadowfax</span>
+        <span class="open-tag">Flipkart</span><span class="open-tag">Salesforce</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-logo">Diya Singhal</span>
+  <span class="footer-copy">© 2025 · Business Analyst · Delhi, India</span>
+</footer>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- PROJECT DETAIL PAGES -->
+<!-- ═══════════════════════════════════════ -->
+
+<!-- TACLO -->
+<div class="proj-page" id="page-taclo">
+  <div class="proj-page-inner">
+    <button class="proj-page-back" onclick="closeProject(&#39;taclo&#39;)">← Back to Portfolio</button>
+    <div class="proj-page-eyebrow">Project 01 · Excel · Business Case · BA Requirements</div>
+    <h1 class="proj-page-title">Drone Delivery Feasibility<br>Study — Taclo</h1>
+    <p class="proj-page-sub">End-to-end business case for drone-based delivery at a food-tech startup · Self-initiated</p>
+    <div class="proj-page-img has-image">
+      <img src="./drone_delivery_main_picture.png" alt="Drone delivery feasibility study dashboard">
+    </div>
+    <div class="proj-kpis">
+      <div class="proj-kpi"><span class="proj-kpi-val">₹27,024</span><span class="proj-kpi-label">Monthly cost per drone</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">404</span><span class="proj-kpi-label">Breakeven deliveries/month</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">₹66.91</span><span class="proj-kpi-label">Breakeven cost/delivery</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">~30.6%</span><span class="proj-kpi-label">EBITDA MARGIN (year 1)</span></div>
+    </div>
+    <h2 class="proj-section-title">Business Problem</h2>
+    <p class="proj-body-text">Taclo, a food-tech startup, needed to evaluate whether deploying delivery drones could replace or supplement human delivery partners. The goal was to assess <strong>financial viability, operational feasibility, and implementation approach</strong> — not just at surface level, but with a model that could withstand CFO-level questioning.</p>
+    <h2 class="proj-section-title">What I Built</h2>
+    <div class="findings-grid">
+      <div class="finding-item"><div class="finding-num">01</div><div class="finding-title">Built a ₹103L NPV Drone Delivery Financial Model</div><div class="finding-body">Developed a full financial feasibility model comparing rider vs drone delivery economics. Identified a ₹21.9 per-order cost advantage for drones, 404 orders/month break-even, and 11-month fleet payback with projected ₹102.8 Lakhs 5-year NPV.</div></div>
+      <div class="finding-item"><div class="finding-num">02</div><div class="finding-title">Designed Formula-Driven Scenario &amp; Sensitivity Analysis</div><div class="finding-body">Built dynamic Bear, Base, and Bull case simulations analysing 300–800 monthly orders, ₹25K–₹32K drone operating costs, regulatory delays, and fleet utilisation. The base case achieved ~63% EBITDA margins with ₹45/order delivery cost.</div></div>
+      <div class="finding-item"><div class="finding-num">03</div><div class="finding-title">Planned Multi-City Drone Rollout Strategy</div><div class="finding-body">Created a phased expansion roadmap from Bangalore pilot to Hyderabad, Delhi, and Mumbai deployment. Forecasted scaling from 20 to 55 drones with ₹284.75 Lakhs estimated 3-year investment across fleet, hubs, tech infrastructure, and training.</div></div>
+      <div class="finding-item"><div class="finding-num">04</div><div class="finding-title">Created Executive Go / No-Go Investment Framework</div><div class="finding-body">Designed a weighted decision matrix evaluating ROI, scalability, operational feasibility, technology readiness, ESG impact, and regulatory risk. The model achieved a 3.85/5 investment score, leading to a recommended phased rollout strategy.</div></div>
+    </div>
+    <h2 class="proj-section-title">Key Finding</h2>
+    <p class="proj-body-text">At ₹27,024/month per drone vs ₹28,438 for a delivery partner, drones achieve cost parity at <strong>404 deliveries/month (₹66.91/delivery)</strong>. In a dense zone like HSR Layout or Indiranagar, this is achievable within 3 months of deployment. The recommendation: hybrid model — drones for short-radius peak-hour orders, riders for long-distance/heavy/fragile.</p>
+    <h2 class="proj-section-title">Project Documents</h2>
+    <div class="doc-embed-grid">
+      <div class="doc-embed-card">
+        <div class="doc-embed-head">
+          <div class="doc-embed-title">Taclo Drone BA Portfolio PDF</div>
+        </div>
+        <embed class="doc-object" src="./Taclo_Drone_BA_Portfolio.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OLIST -->
+<div class="proj-page" id="page-olist">
+  <div class="proj-page-inner">
+    <button class="proj-page-back" onclick="closeProject(&#39;olist&#39;)">← Back to Portfolio</button>
+    <div class="proj-page-eyebrow">Project 02 · SQL · PostgreSQL · Power BI</div>
+    <h1 class="proj-page-title">E-Commerce Analytics<br>— Brazilian Olist</h1>
+    <p class="proj-page-sub">100,441 orders · 6 relational tables · 33 SQL queries · 6 views · 2 Power BI dashboards · 2024</p>
+    <div class="proj-page-img has-image">
+      <img src="./white_dashboard.png" alt="Olist ecommerce business analysis dashboard">
+    </div>
+    <div class="proj-kpis">
+      <div class="proj-kpi"><span class="proj-kpi-val">99,441</span><span class="proj-kpi-label">Total orders</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">63.1%</span><span class="proj-kpi-label">Revenue from 3 states</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">0</span><span class="proj-kpi-label">Repeat customers</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">12.5 days</span><span class="proj-kpi-label">Avg delivery time</span></div>
+    </div>
+    <h2 class="proj-section-title">SQL Skills Demonstrated</h2>
+    <div class="findings-grid">
+      <div class="finding-item"><div class="finding-num">CTEs</div><div class="finding-title">Common Table Expressions</div><div class="finding-body">Used for MoM revenue growth (monthly_revenue → revenue_growth → final SELECT), customer segmentation, and top-3-per-state ranking logic.</div></div>
+      <div class="finding-item"><div class="finding-num">WINDOW</div><div class="finding-title">Window Functions</div><div class="finding-body">ROW_NUMBER() OVER PARTITION for top customers per state. LAG() for month-on-month revenue growth calculation across 25 months of data.</div></div>
+      <div class="finding-item"><div class="finding-num">JOINS</div><div class="finding-title">Multi-table Joins</div><div class="finding-body">6-table joins across orders, customers, order_items, sellers, products, payments. Handled NULLs and empty strings robustly with NULLIF.</div></div>
+      <div class="finding-item"><div class="finding-num">VIEWS</div><div class="finding-title">Engineered 6 SQL Views</div><div class="finding-body">vw_monthly_orders · vw_state_revenue · vw_customer_insights · vw_delivery_performance · vw_seller_product_perf · vw_payment_analysis</div></div>
+    </div>
+    <h2 class="proj-section-title">Key Findings</h2>
+    <p class="proj-body-text"><strong>SP + RJ + MG = 63.1% of all revenue</strong> — geographic concentration risk. SP alone = ₹5.2M of ~₹13.6M total. <strong>Zero repeat customers detected</strong> across 99,441 orders — every customer appears exactly once. This is a critical business finding: Olist has no retention mechanism and is entirely dependent on new customer acquisition for growth. <strong>73.9% credit card penetration</strong> with Boleto at 19% signals a significant non-digital user segment that needs offline payment support.</p>
+    <h2 class="proj-section-title">Project Presentation</h2>
+    <div class="doc-embed-card">
+      <div class="doc-embed-head">
+        <div class="doc-embed-title">Olist E-Commerce Analytics PDF</div>
+      </div>
+      <embed class="doc-object" src="./Olist_Ecommerce_Analysis_Diya_Singhal.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" />
+    </div>
+  </div>
+</div>
+
+<!-- FRESCO -->
+<div class="proj-page" id="page-fresco">
+  <div class="proj-page-inner">
+    <button class="proj-page-back" onclick="closeProject(&#39;fresco&#39;)">← Back to Portfolio</button>
+    <div class="proj-page-eyebrow">Project 03 · Excel · Pivot Tables · Dashboard</div>
+    <h1 class="proj-page-title">Operations Dashboard<br>— Fresco</h1>
+    <p class="proj-page-sub">22,823 raw orders · Quick commerce · Bengaluru operations · Excel analysis · Excel Dashboard</p>
+    <div class="proj-page-img has-image">
+      <img src="./fresco_dashboard.png" alt="Fresco business analysis dashboard">
+    </div>
+    <div class="proj-kpis">
+      <div class="proj-kpi"><span class="proj-kpi-val">22,505</span><span class="proj-kpi-label">Completed orders</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">₹80.05L</span><span class="proj-kpi-label">Total revenue</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">99.55%</span><span class="proj-kpi-label">Completion rate</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">25 mins</span><span class="proj-kpi-label">Avg delivery time</span></div>
+    </div>
+    <h2 class="proj-section-title">Key Findings</h2>
+    <div class="findings-grid">
+      <div class="finding-item"><div class="finding-num">01</div><div class="finding-title">HSR Layout = 69.6% of all orders</div><div class="finding-body">15,657 of 22,505 completed orders came from HSR Layout. Fresco is operationally a single-zone business. ITI Layout is a distant #2 at 17.5% (3,946 orders).</div></div>
+      <div class="finding-item"><div class="finding-num">02</div><div class="finding-title">September surge: 4,231 orders</div><div class="finding-body">September = 18.8% of full-year orders. Revenue jumped from ₹11.44L (Aug) to ₹13.22L (Sep). Steady MoM growth from Jan 1,606 → Sep 4,231.</div></div>
+      <div class="finding-item"><div class="finding-num">03</div><div class="finding-title">Late Night = 7% demand, 20% capacity</div><div class="finding-body">Only 1,589 orders during Late Night vs 5,924 in Afternoon. Maintaining full fleet for 7% demand is a margin drain. Reduced-fleet model recommended.</div></div>
+      <div class="finding-item"><div class="finding-num">04</div><div class="finding-title">Jun revenue dip despite stable orders</div><div class="finding-body">Jun orders: 2,628 (stable). But discounts spiked to ₹18,285 vs ₹6,986 in Apr. Discount-driven orders diluted revenue — promotion strategy needs revision.</div></div>
+    </div>
+    <h2 class="proj-section-title">Fresco Dashbaord Summary</h2>
+    <iframe class="project-report-frame" src="./fresco_summary_v2.html" title="Fresco summary report"></iframe>
+  </div>
+</div>
+
+<!-- SHOPNEST -->
+<div class="proj-page" id="page-shopnest">
+  <div class="proj-page-inner">
+    <button class="proj-page-back" onclick="closeProject(&#39;shopnest&#39;)">← Back to Portfolio</button>
+    <div class="proj-page-eyebrow">Project 04 · Power BI · DAX · Data Modelling</div>
+    <h1 class="proj-page-title">Sales &amp; Performance<br>Dashboard — Shop-Nest</h1>
+    <p class="proj-page-sub">Multi-dimensional e-commerce analysis · Power BI built directly from raw data · 2024</p>
+    <div class="proj-page-img has-image">
+      <img src="./black_dashboard.png" alt="Shop-Nest sales and performance dashboard">
+    </div>
+    <div class="proj-kpis">
+      <div class="proj-kpi"><span class="proj-kpi-val">16M</span><span class="proj-kpi-label">Total revenue</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">99K</span><span class="proj-kpi-label">Total orders</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">4.0</span><span class="proj-kpi-label">Avg product rating</span></div>
+      <div class="proj-kpi"><span class="proj-kpi-val">328</span><span class="proj-kpi-label">Auto category delays</span></div>
+    </div>
+    <h2 class="proj-section-title">Dashboard Coverage</h2>
+    <div class="findings-grid">
+      <div class="finding-item"><div class="finding-num">SALES</div><div class="finding-title">State-wise Revenue Analysis</div><div class="finding-body">SP dominates at ₹6M+. State-level filter connected to all visuals. Revenue by state visualised as ranked bar chart with cross-filtering.</div></div>
+      <div class="finding-item"><div class="finding-num">OPS</div><div class="finding-title">Delayed Orders by Category</div><div class="finding-body">Auto = 811 delayed orders — highest concentration. Table shows category, delay count, filterable by state and year. Ops actionable.</div></div>
+      <div class="finding-item"><div class="finding-num">TREND</div><div class="finding-title">Seasonal &amp; YoY Analysis</div><div class="finding-body">Q2 revenue spike to ₹4.8M identified. YoY growth 2016→2017→2018 shows platform maturation. Q4 decline visible across years.</div></div>
+      <div class="finding-item"><div class="finding-num">RATINGS</div><div class="finding-title">Product Rating Analysis</div><div class="finding-body">Avg rating 4.0 across categories. Product-level rating bar chart shows which categories underperform. Connected to payment and delivery filters.</div></div>
+    </div>
+    <h2 class="proj-section-title">Project Documents</h2>
+    <div class="doc-embed-grid">
+      <div class="doc-embed-card">
+        <div class="doc-embed-head">
+          <div class="doc-embed-title">Shop-Nest Summary (Power BI)</div>
+        </div>
+        <embed class="doc-object" src="./shop_nest_summary.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH" type="application/pdf" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Cursor
+const cur = document.getElementById('cur');
+const cur2 = document.getElementById('cur2');
+document.addEventListener('mousemove', e => {
+  cur.style.left = e.clientX + 'px';
+  cur.style.top = e.clientY + 'px';
+  setTimeout(() => { cur2.style.left = e.clientX + 'px'; cur2.style.top = e.clientY + 'px'; }, 90);
+});
+
+// Nav scroll state
+const nav = document.querySelector('nav');
+const syncNav = () => nav.classList.toggle('scrolled', window.scrollY > 50);
+syncNav();
+window.addEventListener('scroll', syncNav, { passive: true });
+
+// Reveal on scroll
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+// Project pages
+function openProject(id) {
+  document.getElementById('page-' + id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+  window.scrollTo(0, 0);
+}
+function closeProject(id) {
+  document.getElementById('page-' + id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+// Close on escape
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') {
+    document.querySelectorAll('.proj-page.open').forEach(p => {
+      p.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  }
+});
+</script>
+
+
+</body></html>
